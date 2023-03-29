@@ -5,7 +5,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-    var randdomval=Math.random() * (10 - 1) + 1;
+    var randdomval=Math.abs(Math.random() * (10 - 1) + 1);
   res.send('[fn] applied to '+randdomval+' is '+Math.log(randdomval));
 });
 
